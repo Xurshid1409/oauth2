@@ -1,0 +1,19 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          oneId:
+            client-id: ikkilamchitalim_edu_uz
+            client-name: oneId
+            client-secret: 58T0vHQnAfB0XN2eLIyPzy9U
+            redirect-uri:  "test.jsp/"
+            authorization-grant-type: one_authorization_code
+#            scope:
+#              - myportal
+        provider:
+          oneId:
+            authorization-uri: https://sso.egov.uz/sso/oauth/Authorization.do
+            token-uri: https://sso.egov.uz/sso/oauth/Authorization.do
+            user-info-uri: https://sso.egov.uz/sso/oauth/Authorization.do
+#            user-info-authentication-method: GET
